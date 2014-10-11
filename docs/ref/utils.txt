@@ -490,7 +490,7 @@ Atom1Feed
 
     You can use the ``name`` argument to make cached properties of other
     methods. For example, if you had an expensive ``get_friends()`` method and
-    wanted to allow calling it without retrieving the cached value, you could
+    wanted to allow calling it directly, bypassing the cached value, you could
     write::
 
         friends = cached_property(get_friends, name='friends')
